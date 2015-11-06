@@ -6,8 +6,8 @@ architecture, constant data array will use RAM memory if you want to directly ac
 program memory).  
 
 ## External Memory for ATMEGA 2560
-For ATMEGA 2560, it has external memory bus to add more SRAM(data) up to 32K.  With internal 8K RAM(why so little), you 
-will have total 40K RAM to program.
+For ATMEGA 2560, it has external memory bus to add more SRAM(data) up to 64K(overlapping internal memory).  In this project, we only add 32K memory from address 0x8000 to 0xFFF.  With internal 8K RAM(why so little), you 
+will have total 40K RAM.
 
 ## Using External Memory at Heap(for memory allocation)
 We can certainly configure program RAM(stack and healp) at this external memory.  But then we probably leave out the internal 
