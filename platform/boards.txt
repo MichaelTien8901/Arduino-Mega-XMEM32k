@@ -1,0 +1,28 @@
+##############################################################
+# AT Mega with heap 32K external RAM at 808000 to 80FFFF
+# need to setup XMCRA = (1 << SRE), XMCRB = 0 
+##############################################################
+
+mega32KRAM.name=Mega with heap 32K external RAM
+
+mega32KRAM.vid.0=0x2341
+mega32KRAM.pid.0=0x0010
+mega32KRAM.vid.1=0x2341
+mega32KRAM.pid.1=0x0042
+
+mega32KRAM.upload.tool=avrdude
+mega32KRAM.upload.maximum_data_size=8192
+
+mega32KRAM.bootloader.tool=avrdude
+mega32KRAM.bootloader.low_fuses=0xFF
+mega32KRAM.bootloader.unlock_bits=0x3F
+mega32KRAM.bootloader.lock_bits=0x0F
+
+mega32KRAM.build.f_cpu=16000000L
+mega32KRAM.build.core=arduino
+mega32KRAM.build.variant=mega
+# default board  may be overridden by the cpu menu
+mega32KRAM.build.board=AVR_MEGA2560
+mega32KRAM.compiler.c.elf.extra_flags= -Wl,--defsym=__heap_start=0x808000,--defsym=__heap_end=0x80ffff 
+
+
