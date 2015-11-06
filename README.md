@@ -21,3 +21,14 @@ Before you compile the project xmem32k, choose the board [Tools]->[board]->[Mega
 ## Circuit Diagram
 ATMEGA 2560 datasheet has the information how to add external memory.
 Sorry, UNO hardware doesn't has the external memory bus.
+
+## PINs Used
+
+| Signal | Port |
+|------- | ----------|
+| WR      | (PG0)    |
+| RD      | (PG1)    |
+|ALE      | (PG2)    |
+|AD0-AD7 | (PA0-PA7) |
+|A8-A15  | (PC0-PC7) |
+
