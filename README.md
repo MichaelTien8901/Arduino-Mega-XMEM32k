@@ -22,11 +22,11 @@ Sorry, UNO hardware doesn't has the external memory bus.
 
 ## PINs Used
 
-| Signal | Port |
-|------- | ----------|
-| WR      | (PG0)    |
-| RD      | (PG1)    |
-|ALE      | (PG2)    |
-|AD0-AD7 | (PA0-PA7) |
-|A8-A15  | (PC0-PC7) |
+| Signal | Port | Arduino Defined Pin Number |
+|------- | ----------|-----------------------|
+| WR      | (PG0)    | 41 |
+| RD      | (PG1)    | 40 |
+|ALE      | (PG2)    | 39 |
+|AD0-AD7 | (PA0-PA7) |22, 23, ..., 29 |
+|A8-A15  | (PC0-PC7) |37, 36, ..., 30 |
 
