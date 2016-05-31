@@ -16,10 +16,10 @@ For ATMEGA 2560, it has external memory bus to add more SRAM(data) up to 64K(ove
 We can certainly configure program RAM(stack and heap) at this external memory.  But then we probably leave out the internal 8k memory. This project configure external memory as heap so that internal 8K memory is still used as before.  You have to 
 allocate the external memory before use.  The sample program demo the usage.
 
-## Installation to Arduino IDE
+## How to Install to Arduino IDE
 
 Add the content of file **platform\boards.txt** into the file **[ARDUINO INSTALL FOLDER]\hardware\arduino\avr\boards.txt**.
-Before you compile the project xmem32k, choose the board **Tools->board-[Mega with heap 32K external RAM**.  
+Before you compile the project xmem32k, choose the board **Tools->board->Mega with heap 32K external RAM**.  
 
 ## Circuit Diagram
 
